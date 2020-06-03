@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create news</title>
+</head>
+<body>
+    <form method="post">{% csrf_token %}
+        <p>Title</p>
+        <input name="title">
+        <p>Text</p>
+        <p><textarea name="text" cols="40" rows="3"></textarea></p>
+        <button type="submit">Add a news</button>
+    </form>
+    <p><a href="/news/">news</a></p>
+</body>
+</html>
